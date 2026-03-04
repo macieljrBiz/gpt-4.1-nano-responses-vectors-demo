@@ -88,3 +88,19 @@ Ready!
 Type your question below or type "exit" to quit.
 
 You: How many PTO days do I get after 3 years?
+```
+
+## Azure Services & API Status
+
+| Resource / Feature | Status | Reference |
+|---|---|---|
+| **Azure AI Foundry** (platform) | GA | [Azure AI Foundry Models](https://learn.microsoft.com/azure/ai-foundry/openai/concepts/models) |
+| **GPT-4.1-nano** (model) | GA | [GPT-4.1 series](https://learn.microsoft.com/azure/ai-foundry/openai/concepts/models#gpt-41-series) |
+| **Responses API** | Preview | [Azure OpenAI Responses API (Preview)](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/responses) |
+| **Vector Store API** | Preview | [REST API preview reference — Vector Stores](https://learn.microsoft.com/azure/ai-foundry/openai/reference-preview#list---vector-stores) |
+| **Files API** (purpose: `assistants`) | Preview | [REST API preview reference — Files Upload](https://learn.microsoft.com/azure/ai-foundry/openai/authoring-reference-preview#files---upload) |
+| **File Search tool** | Preview | [Responses API — file_search](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/responses) |
+| **Azure Managed Identity** | GA | [DefaultAzureCredential](https://learn.microsoft.com/python/api/azure-identity/azure.identity.defaultazurecredential) |
+| **azure-identity** (Python SDK) | GA | [azure-identity on PyPI](https://pypi.org/project/azure-identity/) |
+
+> **Note:** Features marked as **Preview** are subject to change and are not recommended for production workloads. The core APIs this project relies on (Responses API, Vector Stores, Files API, File Search) are all still in preview as of March 2026.
