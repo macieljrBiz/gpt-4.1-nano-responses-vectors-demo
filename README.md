@@ -96,11 +96,11 @@ You: How many PTO days do I get after 3 years?
 |---|---|---|
 | **Azure AI Foundry** (platform) | GA | [Azure AI Foundry Models](https://learn.microsoft.com/azure/ai-foundry/openai/concepts/models) |
 | **GPT-4.1-nano** (model) | GA | [GPT-4.1 series](https://learn.microsoft.com/azure/ai-foundry/openai/concepts/models#gpt-41-series) |
-| **Responses API** | Preview | [Azure OpenAI Responses API (Preview)](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/responses) |
-| **Vector Store API** | Preview | [REST API preview reference — Vector Stores](https://learn.microsoft.com/azure/ai-foundry/openai/reference-preview#list---vector-stores) |
-| **Files API** (purpose: `assistants`) | Preview | [REST API preview reference — Files Upload](https://learn.microsoft.com/azure/ai-foundry/openai/authoring-reference-preview#files---upload) |
-| **File Search tool** | Preview | [Responses API — file_search](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/responses) |
+| **Responses API** | GA | [v1 API — Responses](https://learn.microsoft.com/azure/ai-foundry/openai/api-version-lifecycle) |
+| **Vector Store API** | GA | [v1 API — Vector Stores](https://learn.microsoft.com/azure/ai-foundry/openai/api-version-lifecycle) |
+| **Files API** | GA | [v1 API — Files](https://learn.microsoft.com/azure/ai-foundry/openai/api-version-lifecycle) |
+| **File Search tool** | GA | [Responses API — file_search](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/responses) |
 | **Azure Managed Identity** | GA | [DefaultAzureCredential](https://learn.microsoft.com/python/api/azure-identity/azure.identity.defaultazurecredential) |
 | **azure-identity** (Python SDK) | GA | [azure-identity on PyPI](https://pypi.org/project/azure-identity/) |
 
-> **Note:** Features marked as **Preview** are subject to change and are not recommended for production workloads. The core APIs this project relies on (Responses API, Vector Stores, Files API, File Search) are all still in preview as of March 2026.
+> **Note:** All APIs used by this project (Responses, Vector Stores, Files, File Search) are **Generally Available** under the [v1 API](https://learn.microsoft.com/azure/ai-foundry/openai/api-version-lifecycle). The older versioned API (`api-version=2025-04-01-preview`) still labels some of these as Preview, but the v1 surface — which this project uses — is GA.
